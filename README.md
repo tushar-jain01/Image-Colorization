@@ -12,7 +12,7 @@ I have used the same model architecture as suggested in the original paper with 
 ### 1.	CelebA dataset(Large-Scale Celeb Faces Attributes Dataset (Liu, 2015) [[2]](#2) )
 Dataset Contains more than 200k images of celebrity faces from different countries. I used 1000 images from them as training data 200 as validation data and 200 as test data.
 ### 2.	Linnaeus 5 dataset (Chaladze, 2017) [[3]](#3)
-Dataset contains two parts Test and Train, Train contains 6000 classes divide equally between 5 classes and Test contains 2000 images divided equally among 5 classes. I used images of ‘flower’ class from the dataset because they were more colorful and thus giving model more colors to learn
+Dataset contains two parts Test and Train, Train contains 6000 images divide equally between 5 classes and Test contains 2000 images divided equally among 5 classes. I used images of ‘flower’ class from the dataset because they were more colorful and thus giving model more colors to learn
 
 ## Outputs
 ### On CelebA Dataset (Input Images resized to 100 X 100)
