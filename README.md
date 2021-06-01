@@ -16,9 +16,11 @@ Dataset contains two parts Test and Train, Train contains 6000 images divide equ
 
 ## Outputs
 ### On CelebA Dataset (Input Images resized to 100 X 100)
+[Trained Model](https://drive.google.com/file/d/1uNuPy3B7ubcTccxh7WG7PHMGaOqBZuzu/view?usp=sharing)
 ![](./Output/CelebA.jpg)
 
 ### On Linnaeus Dataset (Input Image 256 X 256)
+[Trained Model](https://drive.google.com/file/d/1YV0vr_lWuZ4xa4l9UPnznm2LUpPrwfTa/view?usp=sharing)
 ![](./Output/Linnaeus.png)
 
 ## References
