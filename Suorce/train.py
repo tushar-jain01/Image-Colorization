@@ -35,7 +35,10 @@ colorize_model = net.build_model(
     learning_rate=config.LEARNING_RATE)
 
 # Load Previously trained model
-colorize_model.load_weights(config.LOAD_MODEL_PATH)
+try:
+    colorize_model.load_weights(config.LOAD_MODEL_PATH)
+except:
+    pass
 
 log = tf.keras.callbacks.CSVLogger(config.SAVE_CSV_PATH,append=True, separator=',')
 callbacks = [log]
@@ -43,6 +46,7 @@ callbacks = [log]
 history = colorize_model.fit(
     tools.BatchGenerator(train_data, imgDataGen,config.BATCH_SIZE),
     validation_data = tools.BatchGenerator(val_data, valimgDataGen),
+    validation_steps=config.VALIDATION_STEPS,
     steps_per_epoch =config.STEPS_PER_EPOCHS,
     epoch=config.NUMBER_OF_EPOCHS,
     callbacks=callbacks)
